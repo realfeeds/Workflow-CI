@@ -79,7 +79,7 @@ jobs:
           docker push ${{ secrets.DOCKER_HUB_USERNAME }}/diabetes-model:latest
 
       # Upload MLflow Runs Artifacts (Kriteria 3)
-      - name: Upload MLflow Runs Artifacts
+      - name: Upload to GitHub
         uses: actions/upload-artifact@v4
         with:
           name: mlflow-model-artifacts
@@ -90,7 +90,6 @@ jobs:
       # Commit and Push MLflow Runs to Repository (Kriteria 3)
       - name: Commit and Push MLflow Runs to Repository
         run: |
-          # Ubah kembali jalur mutlak ke format Windows lokal sebelum di-commit agar lokal tetap kompatibel
           find mlruns/ -name "meta.yaml" -exec sed -i "s|file://$GITHUB_WORKSPACE|file:///C:/Users/user/OneDrive/Documents/GitHub%20Projects/Workflow-CI|g" {} +
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
