@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/OneDrive/Documents/GitHub%20Projects/Workflow-CI/mlruns/0/023240d4f5d641cd83ae77e4b34ca1b1/artifacts
+end_time: 1780197565292
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 023240d4f5d641cd83ae77e4b34ca1b1
+run_name: thoughtful-smelt-364
+run_uuid: 023240d4f5d641cd83ae77e4b34ca1b1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780197539138
+status: 3
+tags: []
+user_id: user

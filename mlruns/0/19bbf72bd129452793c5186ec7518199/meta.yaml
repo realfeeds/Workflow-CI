@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/OneDrive/Documents/GitHub%20Projects/Workflow-CI/mlruns/0/19bbf72bd129452793c5186ec7518199/artifacts
+end_time: 1780197498131
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 19bbf72bd129452793c5186ec7518199
+run_name: bald-snail-952
+run_uuid: 19bbf72bd129452793c5186ec7518199
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780197480899
+status: 4
+tags: []
+user_id: user

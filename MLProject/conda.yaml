@@ -1,0 +1,12 @@
+name: diabetes-training
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - mlflow==2.19.0
+      - pandas==2.3.3
+      - scikit-learn==1.8.0
+      - numpy==2.3.3
