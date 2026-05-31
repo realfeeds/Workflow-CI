@@ -14,6 +14,8 @@ on:
 jobs:
   train-model:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
     - name: Checkout Repository
@@ -41,3 +43,11 @@ jobs:
         path: |
           mlruns/
           MLProject/mlruns/
+
+    - name: Commit and Push MLflow Runs to Repository
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add mlruns/
+        git commit -m "chore: save training artifacts from CI workflow [skip ci]" || echo "No changes to commit"
+        git push
