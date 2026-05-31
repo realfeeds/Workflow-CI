@@ -19,8 +19,9 @@ if os.environ.get("CI") == "true":
 else:
     mlflow.set_tracking_uri("http://127.0.0.1:5000/")
 
-# Create a new MLflow Experiment
-mlflow.set_experiment("Modelling Identifikasi Diabetes")
+# Create a new MLflow Experiment (hanya jika tidak dijalankan lewat 'mlflow run')
+if "MLFLOW_RUN_ID" not in os.environ:
+    mlflow.set_experiment("Modelling Identifikasi Diabetes")
 
 # Enable MLflow autolog
 mlflow.sklearn.autolog()

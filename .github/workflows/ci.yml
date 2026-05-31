@@ -38,4 +38,6 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: mlflow-model-artifacts
-        path: mlruns/
+        path: |
+          mlruns/
+          MLProject/mlruns/
