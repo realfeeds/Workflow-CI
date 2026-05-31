@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/OneDrive/Documents/GitHub%20Projects/Workflow-CI/mlruns/0/2a94feaeb6b243758065258e92af466a/artifacts
+end_time: 1780206349178
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2a94feaeb6b243758065258e92af466a
+run_name: amazing-shad-921
+run_uuid: 2a94feaeb6b243758065258e92af466a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780206340623
+status: 3
+tags: []
+user_id: runner
